@@ -29,4 +29,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
 echo [✓] $HOME/.zshrc updated
-zsh -c "echo [✓] install complete"
+zsh -c "$(echo [✓] install complete)"
