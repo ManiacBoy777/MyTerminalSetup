@@ -1,4 +1,4 @@
-export ZSH_CUSTOM="$(echo $HOME)/.oh-my-zsh/custom"
+export ZSH_CUSTOM="${echo $HOME}/.oh-my-zsh/custom"
 # Define a function that runs a command with sudo if possible and needed
 sudo_if_possible() {
   # Check if sudo is available
@@ -20,11 +20,11 @@ sudo_if_possible() {
 sudo_if_possible apt update
 sudo_if_possible apt install fzf zsh -y
 echo installing plugins...
-git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM}/plugins/fzf-tab
 echo [✓] fzf-tab installed
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
 echo [✓] zsh-autosuggestions installed
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
 echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
