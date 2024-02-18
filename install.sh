@@ -28,5 +28,5 @@ echo [✓] zsh-autosuggestions installed
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
 echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/upgrade.sh)" ""
+chsh -s $(which zsh)
 zsh -l
