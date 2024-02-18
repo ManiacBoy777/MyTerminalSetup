@@ -17,7 +17,7 @@ sudo_if_possible() {
 }
 
 sudo_if_possible apt update
-sudo_if_possible apt install fzf
+sudo_if_possible apt install fzf zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 echo [✓] oh-my-zsh installed
 echo installing plugins...
@@ -30,5 +30,5 @@ echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
 echo [✓] Installation complete
 chsh -s /usr/bin/zsh
-echo [✓] changed default shell to zsh
+echo [✓] Changed default shell to zsh
 zsh -l
