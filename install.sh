@@ -1,4 +1,4 @@
-export ZSH_CUSTOM="$($HOME)/.oh-my-zsh/custom"
+export ZSH_CUSTOM="$(echo $HOME)/.oh-my-zsh/custom"
 # Define a function that runs a command with sudo if possible and needed
 sudo_if_possible() {
   # Check if sudo is available
