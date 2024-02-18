@@ -1,5 +1,5 @@
 sudo apt install expect -y
-expect $(curl -fsSl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/oh-my-zsh.exp)
+expect "$(curl -fsSl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/oh-my-zsh.exp)"
 echo [✓] oh-my-zsh installed
 echo installing plugins...
 git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
