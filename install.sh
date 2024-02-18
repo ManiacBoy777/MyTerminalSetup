@@ -29,6 +29,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
 echo [✓] Installation complete
-chsh -s /bin/zsh
+chsh -s /usr/bin/zsh
 echo [✓] changed default shell to zsh
 zsh -l
