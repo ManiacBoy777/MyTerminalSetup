@@ -104,7 +104,7 @@ echo
 ## cursor
 printf '\e[4 q'
 ## prompt
-TNAME='$USER'
+TNAME=$USER
 setopt prompt_subst
 
 PROMPT=$'
