@@ -1,3 +1,4 @@
+export $ZSH_CUSTOM=~/.oh-my-zsh/custom
 # Define a function that runs a command with sudo if possible and needed
 sudo_if_possible() {
   # Check if sudo is available
@@ -18,8 +19,6 @@ sudo_if_possible() {
 
 sudo_if_possible apt update
 sudo_if_possible apt install fzf zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-echo [✓] oh-my-zsh installed
 echo installing plugins...
 git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 echo [✓] fzf-tab installed
@@ -28,7 +27,5 @@ echo [✓] zsh-autosuggestions installed
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 echo [✓] zsh-syntax-highlighting installed
 curl https://raw.githubusercontent.com/ManiacBoy777/MyTerminalSetup/main/.zshrc > ~/.zshrc
-echo [✓] Installation complete
-chsh -s /usr/bin/zsh
-echo [✓] Changed default shell to zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 zsh -l
