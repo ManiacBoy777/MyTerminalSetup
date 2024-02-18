@@ -1,6 +1,6 @@
 #!/usr/bin/expect
-# Set the timeout to 10 seconds
-set timeout 10
+# Set the timeout to 3 seconds
+set timeout 3
 # Spawn the installation command
 spawn sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Expect the prompt to make zsh the default shell
